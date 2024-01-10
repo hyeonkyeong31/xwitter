@@ -70,6 +70,9 @@ export default function PostTweetForm() {
     const onFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { files } = e.target;
         if (files && files.length === 1) {
+            if (files[0].size > 1024 * 1024) {
+                alert("사진 업로드는 1mb이하의 사진만 업로드 가능합니다");
+            }
             setFile(files[0]);
         }
     };
@@ -80,7 +83,7 @@ export default function PostTweetForm() {
 
         try {
             setLoading(true);
-            const doc = await addDoc(collection(db, "tweet"), {
+            const doc = await addDoc(collection(db, "tweets"), {
                 tweet,
                 createdAt: Date.now(),
                 username: user.displayName || "Anonymous",
