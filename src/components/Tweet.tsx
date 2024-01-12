@@ -51,7 +51,9 @@ export default function Tweet({ username, photo, tweet, userId, id }: ITweet) {
                 await deleteObject(photoRef);
             }
         } catch (error) {
+            console.log(error);
         } finally {
+            //
         }
     };
     return (

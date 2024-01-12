@@ -17,13 +17,17 @@ export interface ITweet {
     tweet: string;
     userId: string;
     username: string;
-    createAt: number;
+    createdAt: number;
 }
 
 const Wrapper = styled.div`
     display: flex;
     gap: 10px;
     flex-direction: column;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 `;
 
 export default function Timeline() {
@@ -40,11 +44,11 @@ export default function Timeline() {
             );
             unsubscribe = await onSnapshot(tweetsQuery, (snapshot) => {
                 const tweets = snapshot.docs.map((doc) => {
-                    const { tweet, createAt, userId, username, photo } =
+                    const { tweet, createdAt, userId, username, photo } =
                         doc.data();
                     return {
                         tweet,
-                        createAt,
+                        createdAt,
                         userId,
                         username,
                         photo,
