@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Xwitter - 트위터 클론코딩
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+파이어베이스 사용 - realtime db, firestore, hosting
 
-Currently, two official plugins are available:
+https://xwitter-14a84.web.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 페이지 및 기능
 
-## Expanding the ESLint configuration
+**Home**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 좌측 네비게이션 바
+    - 홈
+    - 유저
+    - 로그인/로그아웃
+- 포스팅할수 있는 영역이 있고 사진과 함께 트윗 가능
 
-- Configure the top-level `parserOptions` property like this:
+![xwitter1](https://github.com/hyeonkyeong31/xwitter/assets/78129949/dd40a46a-135e-4910-bab7-f9255ac1e0c9)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+**User**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- 프로필사진과 유저 이름 표기
+- 내가 작성한 트윗의 타임라인 표시
+
+![xwitter2](https://github.com/hyeonkyeong31/xwitter/assets/78129949/bfcdecd9-8784-4bef-8b75-dac3c825550a)
+
+**기술스택**
+
+Language : `React`, `TypScript`
+
+Bundling : `vite` 
+
+Backend, Hosting : `firebase`, `firestore`
+
+UI : `styled-components`
