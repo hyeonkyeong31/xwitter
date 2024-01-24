@@ -12,7 +12,7 @@ https://xwitter-14a84.web.app/
     - 홈
     - 유저
     - 로그인/로그아웃
-- 포스팅할수 있는 영역이 있고 사진과 함께 트윗 가능
+- 포스팅할수 있는 영역, 사진첨부하여 작성 가능
 
 ![xwitter1](https://github.com/hyeonkyeong31/xwitter/assets/78129949/dd40a46a-135e-4910-bab7-f9255ac1e0c9)
 
