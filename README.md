@@ -1,4 +1,4 @@
-# Xwitter - 트위터 클론코딩
+# Xwitter - SNS 포스팅 웹서비스
 
 파이어베이스 사용 - realtime db, firestore, hosting
 
